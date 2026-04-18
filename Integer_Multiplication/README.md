@@ -30,11 +30,10 @@ g++ -mavx2 -I./includes src/integer_multiplication.cpp src/integer_multiplicatio
 
 The program outputs the results of the multiplication operations, verifying the correctness of the SIMD logic.
 
-```text
+```
 c1: 1 0 4 0 9 0 16 0
 c2: 25 0 36 0 49 0 64 0
 a: 10 3000 -2000 4200
 b: -500 100 -12000 1000
 c: -5000 300000 24000000 4200000
-...
 ```
