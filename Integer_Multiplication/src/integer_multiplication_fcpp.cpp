@@ -33,8 +33,8 @@ void MulI32b_Iavx(XmmVal c[2], XmmVal* a, XmmVal* b){
     __m128i temp3 = _mm_srli_si128(b_vals, 4);
     __m128i temp4 = _mm_mul_epi32(temp2, temp3);
 
-    __m128i result_lo = _mm_unpacklo_epi64(temp1, temp4); // [R0, R1]
-    __m128i result_hi = _mm_unpackhi_epi64(temp1, temp4); // [R2, R3]
+    __m128i result_lo = _mm_unpacklo_epi64(temp1, temp4);
+    __m128i result_hi = _mm_unpackhi_epi64(temp1, temp4);
 
     _mm_store_si128((__m128i*) c, result_lo);
     _mm_store_si128((__m128i*) c + 1, result_hi);
